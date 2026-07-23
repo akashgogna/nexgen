@@ -176,12 +176,7 @@
   .banner-showcase{width:100%;line-height:0;}
   .banner-showcase img{width:100%;height:auto;display:block;}
 
-  .logo {
-  width: 80px;
-  height: 80px;
-  object-fit: contain;
-  display: block;
-}
+ 
 
 
   /* ---------- Credentials strip (navy, wave top) ---------- */
@@ -432,6 +427,19 @@
     flex-wrap:wrap;gap:14px;
     font-size:13px;
   }
+
+.brand {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.logo {
+  height: clamp(50px, 8vw, 100px);
+  width: auto;
+  object-fit: contain;
+}
+
 </style>
 </head>
 <body>
@@ -439,10 +447,12 @@
 <header>
   <div class="header-inner">
     <a href="#top" class="brand">
-      <img src="https://raw.githubusercontent.com/akashgogna/nexgen/main/ChatGPT%20Image%20Jul%2023,%202026%20at%2007_01_40%20PM.png" 
-           alt="Nexgen Appraisal Services Logo"
-           class="logo">
+      <img 
+        src="https://raw.githubusercontent.com/akashgogna/nexgen/main/ChatGPT%20Image%20Jul%2023,%202026%20at%2007_01_40%20PM.png" 
+        alt="Nexgen Appraisal Services Logo"
+        class="logo">
     </a>
+
     <nav>
       <div class="nav-links">
         <a href="#services">Services</a>
